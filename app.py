@@ -255,7 +255,7 @@ def profile():
     form = UserEditForm(obj=user)
 
     if form.validate_on_submit():
-        if User.authenticate(user.username, form.passowrd.data):
+        if User.authenticate(user.username, form.password.data):
             user.username = form.username.data
             user.email = form.email.data
             user.image_url = form.image_url.data or "/static/images/default-pic.png"
