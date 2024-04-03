@@ -259,7 +259,7 @@ def profile():
             user.username = form.username.data
             user.email = form.email.data
             user.image_url = form.image_url.data or "/static/images/default-pic.png"
-            user.header_image_url = form.header_image_url.data or "/static/images/warbler-hero.jpg"
+            # user.header_image_url = form.image_url.data or "/static/images/warbler-hero.jpg"
             user.bio = form.bio.data
 
             db.session.commit()
